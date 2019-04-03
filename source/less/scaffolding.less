@@ -1,0 +1,143 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  min-width: 320px;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #000000;
+  font-style: normal;
+  background-color: @basic-color;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+@media (min-width: @size-tablet) {
+  .container {
+
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media (min-width: @size-desktop) {
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1170px;
+  }
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "open sans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "open sans semibold";
+  src: url("../fonts/opensanssemibold.woff2") format("woff2"), url("../fonts/opensanssemibold.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Verdana";
+  src: url("../fonts/Verdana.woff2") format("woff2"), url("../fonts/Verdana.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto bold";
+  src: url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto medium";
+  src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto light";
+  src: url("../fonts/robotolight.woff2") format("woff2"), url("../fonts/robotolight.woff") format("woff");
+  font-style: normal;
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Montserrat bold";
+  src: url("../fonts/montserratbold.woff2") format("woff2"), url("../fonts/montserratbold.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "SegoeUI bold";
+  src: url("../fonts/SegoeUIbold.woff2") format("woff2"), url("../fonts/SegoeUIbold.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url("../fonts/ProximaNovaSemibold.woff2") format("woff2"), url("../fonts/ProximaNovaSemibold.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNovaRegular.woff2") format("woff2"), url("../fonts/ProximaNovaSemibold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova light";
+  src: url("../fonts/ProximaNovaLight.woff2") format("woff2"), url("../fonts/ProximaNovaLight.woff") format("woff");
+  font-style: normal;
+  font-weight: lighter;
+}
