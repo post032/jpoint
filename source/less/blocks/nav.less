@@ -1,0 +1,152 @@
+.nav-open {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-hide {
+  display: none;
+}
+//
+// .nav-show {
+//   display: flex;
+// }
+
+.nav-open:focus {
+  outline: none;
+}
+
+.nav-open span {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 4px;
+  right: 3px;
+  height: 6px;
+  background: #222494;
+  border-radius: 50px;
+}
+
+.nav-open span::after,
+.nav-open span::before {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  border-radius: 50px;
+  background-color: #222494;
+  content: "";
+}
+
+.nav-open span::before {
+  top: -11px;
+}
+
+.nav-open span::after {
+  bottom: -11px;
+}
+
+.nav-open--htx {
+  background-color: #ffffff;
+}
+
+.nav-open--htx span {
+  transition: background 0s 0.3s;
+}
+
+.nav-open--htx span::after,
+.nav-open--htx span::before {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.nav-open--htx span::before {
+  transition-property: top, transform;
+}
+
+.nav-open--htx span::after {
+  transition-property: bottom, transform;
+}
+/* состояние active при открытом меню  */
+.nav-open--htx.is-active {
+  background-color: #ffffff;
+}
+
+.nav-open--htx.is-active span {
+  background: none;
+}
+
+.nav-open--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.nav-open--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.nav-open--htx.is-active span::after,
+.nav-open--htx.is-active span::before {
+  transition-delay: 0s, 0.3s;
+}
+
+.nav {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.nav__lists {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4d4d4d;
+  width: 100%;
+  padding: 20px 24px;
+  text-align: center;
+}
+@media (min-width: @size-tablet) {
+  .nav-open {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: 67px;
+  }
+
+  .nav__lists {
+    display: flex;
+    flex-grow: 1;
+  }
+}
+@media (min-width: @size-desktop) {}

@@ -1,0 +1,101 @@
+.card {
+  box-sizing: border-box;
+  position: relative;
+  border: solid 1.5px #cdcdcd;
+  border-bottom: solid 4px #222494;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.card__img {
+  width: 120px;
+  height: 120px;
+  margin: 35px 16px 34px 24px;
+}
+
+.card__info {
+  margin-right: 13px;
+}
+
+.card__description,
+.card__text,
+.card__title {
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #4b4b4b;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.card__text {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  color: #4b4b4b;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.card__desktop {
+  display: none;
+}
+
+.card__description {
+  font-size: 16px;
+  font-weight: normal;
+  color: #4b4b4b;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.card__link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #222494;
+  margin-top: 12px;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.card__link:focus,
+.card__link:hover {
+  color: #206eff;
+}
+
+.card:focus,
+.card:hover {
+  border: solid 1.5px #222494;
+  border-bottom: solid 4px #222494;
+}
+@media (min-width: @size-tablet) {}
+@media (min-width: @size-desktop) {
+  .card__desktop {
+    display: inline;
+  }
+
+  .card__link {
+    position: absolute;
+    bottom: 21px;
+    right: 24px;
+    margin: 0;
+  }
+
+  .card__img {
+    margin-right: 12px;
+  }
+}

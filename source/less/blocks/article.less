@@ -1,0 +1,369 @@
+.article {
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0 -2px 6px 0 rgba(0, 0, 0, 0.1), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fafafa;
+  padding-bottom: 17px;
+}
+
+.article__header {
+  margin-left: 16px;
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.article__favourites {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 13px;
+  margin-bottom: 16px;
+}
+
+.article__favourites p {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4d4d4d;
+  margin: 0;
+}
+
+.article__favourites svg {
+  margin-left: 16px;
+  fill: rgba(255, 162, 162, 0.4);
+}
+
+.article__favourites svg:hover,
+.article__favourites svg:focus {
+  fill: #FFA2A2;
+}
+
+.article__title {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4d4947;
+  margin-top: 0;
+  margin-bottom: 16px;
+  margin-right: 5px;
+}
+
+.article__filters {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.article__filters svg {
+  margin-right: 24px;
+}
+
+.article__filters p {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4d4d4d;
+  margin: 0;
+  margin-right: 16px;
+}
+
+.article__item {
+  border: solid 1.5px #cdcdcd;
+  border-bottom: solid 4px #222494;
+  background-color: #ffffff;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article__text {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  margin: 16px 18px 32px 12px;
+}
+
+.article__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 57px;
+  grid-row-gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 44px;
+  margin-right: 44px;
+}
+
+.article__info-item {
+  display: flex;
+  align-items: center;
+}
+
+.article__info-item p {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #9b9999;
+  margin: 0;
+  margin-left: 14px;
+}
+
+.article__button {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #222494;
+  text-decoration: none;
+  border: solid 1.5px #222494;
+  background-color: #ffffff;
+  padding: 11px 16px;
+  margin-top: 44px;
+  margin-bottom: 42px;
+}
+
+.article__button:hover,
+.article__button:focus {
+  border: solid 1.5px #222494;
+  background-color: #222494;
+  color: #ffffff;
+}
+
+.article__card {
+  display: grid;
+  margin: 0 16px;
+  grid-gap: 17px;
+  justify-content: space-between;
+}
+
+.article__icon {
+  fill: #9B9999;
+}
+
+.article__time {
+  fill: #9d9a9a;
+}
+
+.article__two,
+.article__three {
+  display: none;
+}
+
+@media (min-width: @size-tablet) {
+  .article__two,
+  .article__three {
+    display: flex;
+  }
+
+.article__two {
+  padding-top: 39px;
+  padding-bottom: 57px;
+}
+
+  .article__header {
+    margin-left: 40px;
+    margin-right: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .article__favourites {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+  }
+
+  .article__favourites p {
+    width: 100px;
+  }
+
+  .article__favourites svg {
+    margin: 0;
+    margin-bottom: 12px;
+  }
+
+  .article__title {
+    font-size: 28px;
+    margin-top: 24px;
+    margin-right: 80px;
+  }
+
+  .article__filters {
+    margin-left: 40px;
+  }
+
+  .article__item {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 8px;
+    padding-bottom: 23px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .article__text {
+    margin-left: 32px;
+    margin-top: 32px;
+    margin-right: 21px;
+    margin-bottom: 27px;
+  }
+
+  .article__info {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-right: 0px;
+    margin-left: 32px;
+    grid-gap: 30px;
+  }
+
+  .article__button {
+    margin: 0;
+    margin-right: 32px;
+  }
+
+  .article__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 40px;
+    grid-gap: 8px;
+  }
+
+  .article__info-item:nth-child(4) {
+    order: 4;
+  }
+
+  .article__info-item:nth-child(2) {
+    order: 3;
+  }
+}
+
+@media (min-width: @size-desktop) {
+  .article__filters,
+  .article__item,
+  .article__card,
+  .article__header {
+    margin-left: 56px;
+    margin-right: 68px;
+  }
+
+  .article__favourites {
+    flex-direction: row;
+  }
+
+  .article__favourites svg {
+    margin: 0;
+    margin-right: 8px;
+    width: 26px;
+    height: 26px;
+  }
+
+  .article__text {
+    margin-left: 40px;
+    margin-right: 82px;
+    margin-bottom: 35px;
+  }
+
+  .article__info {
+    margin-left: 40px;
+    grid-gap: 40px;
+  }
+
+  .article__button {
+    margin-right: 40px;
+  }
+
+  .article__info-item p {
+    display: none;
+  }
+
+  .article__icon:hover,
+  .article__icon:focus {
+    fill: #206eff;
+  }
+////////////////////////////////////////////////
+  .article__tooltip {
+    position: relative;
+	cursor: help;
+}
+
+.article__tooltip::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #5c5c5c;
+  transform: rotate(45deg);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  top: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.article__tooltip::after {
+  opacity: 0.85;
+  border-radius: 3px;
+  min-width: 138px;
+  min-height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5c5c5c;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+	content: attr(data-tooltip); /* Главная часть кода, определяющая содержимое всплывающей подсказки */
+	opacity: 0; /* Наш элемент прозрачен... */
+	// padding: 3px 7px;
+	position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+	visibility: hidden; /* ...и скрыт. */
+
+	transition: all 0.4s ease-in-out; /* Добавить плавности по вкусу */
+}
+
+.article__tooltip:hover::before,
+.article__tooltip:hover::after {
+	opacity: 1; /* Показываем его */
+	visibility: visible;
+}
+
+.article__two {
+  padding-top: 64px;
+  padding-bottom: 65px;
+}
+
+}
