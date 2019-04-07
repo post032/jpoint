@@ -15,3 +15,17 @@
       });
     }
   })();
+
+  $('.card__link').click(function(e) {
+    e.preventDefault();
+    $('.modal__one').show();
+  });
+
+  $('.article__button').click(function(e) {
+    e.preventDefault();
+    $('.modal__two').show();
+  });
+
+  $('.modal__close').click(function() {
+    $('.modal__one, .modal__two').hide();
+  });
