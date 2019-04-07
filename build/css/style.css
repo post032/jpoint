@@ -435,6 +435,8 @@ input[type="radio"].visually-hidden {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 .page-header {
@@ -827,6 +829,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .article__filters svg {
   margin-right: 24px;
